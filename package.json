@@ -1,0 +1,22 @@
+{
+  "scripts": {
+    "start": "node src/app.js",
+    "dev": "nodemon src/app.js"
+  },
+  "name": "express-api",
+  "version": "1.0.0",
+  "main": "index.js",
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "mongoose": "^8.9.5",
+    "openai": "^4.80.1"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.9"
+  }
+}
