@@ -1,6 +1,7 @@
 const express = require('express');
 const mongoose = require('mongoose');
 const userRoutes = require('./routes/user.routes');
+const healthRoutes = require('./routes/health.routes');
 require('dotenv').config();
 
 const app = express();
@@ -10,6 +11,7 @@ app.use(express.json());
 
 // Routes
 app.use('/api', userRoutes);
+app.use('/health', healthRoutes);
 
 // Error handling middleware
 app.use((err, req, res, next) => {
